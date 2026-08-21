@@ -3,39 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código Acero - Venta de Hierro y Materiales</title>
+    <title>Código Acero | Venta de Hierro y Materiales</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; text-align: center; color: #333; }
-        header { background-color: #111; color: #fff; padding: 20px; }
-        h1 { margin: 0; font-size: 24px; color: #ffcc00; }
-        .container { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 5px; }
-        .description { font-size: 16px; margin: 20px 0; line-height: 1.5; }
-        .btn-whatsapp { display: inline-block; background-color: #25d366; color: white; padding: 15px 25px; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .btn-whatsapp:hover { background-color: #1ebe5d; }
-    </style>
-</head>
-<body>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; user-select: none; }
+        body, html { height: 100%; width: 100%; position: relative; }
 
-    <header>
-        <h1>CÓDIGO ACERO</h1>
-        <p>Materiales de construcción y herrería</p>
-    </header>
+        /* Imagen de fondo a pantalla completa */
+        .background { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover; z-index: -1; 
+        }
 
-    <div class="container">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Materiales de Acero">
-        
-        <h2>Tubos Estructurales, Perfiles y Láminas</h2>
-        
-        <p class="description">
-            Venta al mayor y detal de hierro, tubos estructurales, perfiles, láminas de zinc, cabillas lisas y estriadas, pletinas y ángulos. ¡Disponibilidad inmediata y atención directa!
-        </p>
+        /* Contenedor general centrado */
+        .page-container {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+        }
 
-        <!-- Recuerda cambiar 584120000000 por el número real de WhatsApp de Código Acero -->
-        <a href="https://wa.me/584243670808?text=Hola,%20vi%20su%20anuncio%20en%20Facebook%20y%20quiero%20pedir%20presupuesto" class="btn-whatsapp" target="_blank">
-            💬 Consultar por WhatsApp
-        </a>
-    </div>
+        /* Franja central oscura */
+        .central-column {
+            background-color: rgba(12, 12, 12, 0.92);
+            width: 100%;
+            max-width: 620px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 40px rgba(0,0,0,0.9);
+            position: relative;
+        }
 
-</body>
-</html>
+        h1 { 
+            font-size: 2.6rem; 
+            color: #ffcc00; 
+            text-transform: uppercase; 
+            margin-bottom: 12px; 
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
